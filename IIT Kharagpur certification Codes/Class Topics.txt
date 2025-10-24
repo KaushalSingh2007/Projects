@@ -1,0 +1,12 @@
+Python Environment::: (Can be replicated on any Programming language)
+
+1. Write a python code for building a calculator with basic functions. (Use ChatGPT then save the file as calculator.py)
+2. Run calculator.py
+3. Open codex
+4. Prompts:
+	a. Explain calculator.py to me. 
+	b. Check any basic functionality of the calculator.
+	c. Ask the LLM for any suggested improvements.
+	d. Perform the suggested improvements.
+	b. Ask it to make it an advanced calculator. (Try it yourself)
+5. Add some errors intentionally and see if and how codex identifies the issue and resolves. (Try it yourself)
