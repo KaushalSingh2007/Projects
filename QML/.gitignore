@@ -1,0 +1,36 @@
+# Data (never commit raw or processed datasets — see DATASET_REPORT.md)
+data/raw/
+data/processed/
+*.npz
+*.parquet
+
+# Experiment tracking
+mlruns/
+wandb/
+
+# Temporary paper-text extractions (raw OCR/text dumps, not the curated summaries)
+_paper_text/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+.env
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Download logs (transient)
+reports/provenance/_*.log

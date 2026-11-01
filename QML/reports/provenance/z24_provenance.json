@@ -1,0 +1,100 @@
+{
+  "dataset": "Z24 Bridge (progressive damage test)",
+  "repo_id": "thanglexuan/Z24-dataset-processed",
+  "repo_url": "https://huggingface.co/datasets/thanglexuan/Z24-dataset-processed",
+  "repo_type": "dataset",
+  "source_attribution": "KU Leuven (Katholieke Universiteit Leuven) \u2014 Z24 Bridge benchmark",
+  "key_references": [
+    "Maeck & De Roeck (2003)",
+    "Worden & Manson (2007)",
+    "Reynders, De Roeck et al. (2008)"
+  ],
+  "license_note": "HuggingFace mirror is tagged 'MIT'. The UNDERLYING Z24 data is owned by KU Leuven and distributed for research use; treat as non-commercial research data. Original obtainable from https://bwk.kuleuven.be/bwm/z24.",
+  "caveats": [
+    "This mirror is the Progressive Damage Test portion (17 damage scenarios); it likely does NOT include the ~1-year long-term temperature/environmental monitoring record. Confirm whether any temperature signal is present before relying on it for the environmental-confound study (milestone M11/E04).",
+    "Arrays are pre-segmented/normalized by the mirror author (1530 windows of 6000 samples across 27 sensors); raw KU Leuven time histories differ."
+  ],
+  "verified_on": "2026-06-19",
+  "local_dir": "C:\\Users\\singh\\Downloads\\QML\\data\\raw\\z24",
+  "files": [
+    {
+      "name": "inputs.npy",
+      "size_bytes": 991440128,
+      "sha256": "56fb5923433e4b47cbd9c19ce079fc098f59d501b3385f9cb26636cc3928ef6e"
+    },
+    {
+      "name": "labels.npy",
+      "size_bytes": 12368,
+      "sha256": "1929d7ff35c0473d3ddbd3c3c0c28894651163cc9dfcf85318d3d1fceef585f5"
+    },
+    {
+      "name": "pixi.toml",
+      "size_bytes": 288,
+      "sha256": "0bf1570efca7952d80799e486941a41e8b194499603c76661aaf019ea521fc6b"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 8757,
+      "sha256": "775903f7d9166ad9fa613ef94cd516aee692712d7d302d30b4111f46d851f75e"
+    },
+    {
+      "name": "README_vi.md",
+      "size_bytes": 9256,
+      "sha256": "dfab6bbcdfc3427d43dd0082d03fe59de3ef2786f209b2c237e1d53c41cf3d62"
+    }
+  ],
+  "arrays": {
+    "inputs": {
+      "shape": [
+        1530,
+        27,
+        6000
+      ],
+      "dtype": "float32"
+    },
+    "labels": {
+      "shape": [
+        1530
+      ],
+      "dtype": "int64",
+      "unique_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "counts_per_value": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ]
+    }
+  }
+}

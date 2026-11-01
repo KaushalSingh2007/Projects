@@ -1,0 +1,25 @@
+# Root Hydra config for Q-GUARD.
+#
+# Config GROUPS (dataset/, features/, model/, experiment/) are added in their
+# respective milestones (M1+). For now this is a self-contained root so the
+# scaffold composes without referencing not-yet-existing groups.
+
+seed: 1234
+
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  reports: reports
+  figures: reports/figures
+
+tracking:
+  backend: mlflow # mlflow (local file store) | wandb | none
+  experiment_name: qguard
+  uri: mlruns
+
+dataset:
+  name: z24 # single dataset for this project (KW51 dropped per project decision)
+
+# Placeholder; real experiment configs are composed in from configs/experiment/.
+experiment:
+  name: scaffold
